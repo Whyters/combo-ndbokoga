@@ -436,7 +436,7 @@ ui.title:setText(macroName)
 
 local windowUI = setupUI([[
 MainWindow
-  !text: tr('Combo by VictorNeox - edited by mrlthebest. ')
+  !text: tr('Combo by VictorNeox - edited by Ragnarok and Kofar. ')
   size: 575 315
   
   Panel
