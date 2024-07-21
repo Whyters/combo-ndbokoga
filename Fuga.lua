@@ -1,5 +1,5 @@
-local macroName = 'Regeneration';
-local macroDelay = 300;
+local macroName = 'Fuga';
+local macroDelay = 100;
 local tabName = setDefaultTab('HP');
 
 UI.Separator(tabName)
@@ -45,8 +45,8 @@ addScrollBar = function(id, title, min, max, defaultValue, dest, tooltip)
     widget.scroll.onValueChange(widget.scroll, value)
 end
 
-addTextEdit("Regeneration Spell", storage.regenerationSpell or "Regeneration Spell", function(widget, text)
-    storage.regenerationSpell = text;
+addTextEdit("Fuga", storage.fugaSpell or "Fuga", function(widget, text)
+    storage.fugaSpell = text;
 end, tabName);
 addScrollBar('percentageRegeneration', 'Porcentagem Vida', 1, 100, 99, tabName, "Porcentagem de vida para usar o regeneration.");
 
@@ -54,7 +54,7 @@ addScrollBar('percentageRegeneration', 'Porcentagem Vida', 1, 100, 99, tabName, 
 macro(macroDelay, macroName, function()
     local selfHealth = hppercent();
     if selfHealth <= storage.scrollBarValues.percentageRegeneration then
-        say(storage.regenerationSpell)
+        say(storage.fugaSpell)
     end
 end, tabName);
 
