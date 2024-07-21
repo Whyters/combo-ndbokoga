@@ -1,5 +1,5 @@
 local macroName = 'Regeneration';
-local macroDelay = 100;
+local macroDelay = 300;
 local tabName = setDefaultTab('HP');
 
 UI.Separator(tabName)
