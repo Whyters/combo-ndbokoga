@@ -1,6 +1,6 @@
 local macroName = 'Buff';
-local macroDelay = 100;
-local tabName = setDefaultTab('Main');
+local macroDelay = 200;
+local tabName = setDefaultTab('HP');
 
 local checkBox = {};
 
