@@ -48,12 +48,12 @@ end
 addTextEdit("Fuga", storage.fugaSpell or "Fuga", function(widget, text)
     storage.fugaSpell = text;
 end, tabName);
-addScrollBar('percentageRegeneration', 'Porcentagem Vida', 1, 100, 99, tabName, "Porcentagem de vida para usar o regeneration.");
+addScrollBar('percentagefuga', 'Porcentagem Vida', 1, 100, 99, tabName, "Porcentagem de vida para usar o regeneration.");
 
 
 macro(macroDelay, macroName, function()
     local selfHealth = hppercent();
-    if selfHealth <= storage.scrollBarValues.percentageRegeneration then
+    if selfHealth <= storage.scrollBarValues.percentagefuga then
         say(storage.fugaSpell)
     end
 end, tabName);
